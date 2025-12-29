@@ -1,0 +1,25 @@
+models:
+  demo-openai:
+    provider: openai
+    base_url: "https://api.openai.com/v1"
+    api_key: "${OPENAI_API_KEY}"
+    model_name: "gpt-4.1-mini"
+
+# 可选：用于修复 agentic 工作流里不规范的 JSON 输出（留空则不启用）
+json_repair:
+  provider: openai
+  base_url: "https://api.openai.com/v1"
+  api_key: "${OPENAI_API_KEY}"
+  model_name: "gpt-4.1-mini"
+  temperature: 0.0
+  max_tokens: 800
+  timeout: 120
+
+test:
+  temperature: 0.0
+  max_tokens: 4096
+  timeout: 600
+  max_concurrent: 10
+  agentic_max_rounds: 2
+  retry_count: 3
+  retry_delay: 2
