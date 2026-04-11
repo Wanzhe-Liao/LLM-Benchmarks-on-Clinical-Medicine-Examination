@@ -1,0 +1,54 @@
+# local config
+config.yaml
+.env
+.env.*
+
+# generated outputs
+results/
+*.log
+
+# local source materials not for public release
+2026西医综合真题*.md
+assets/
+data/ocr/
+
+# internal working copies and submission files
+LLM-Benchmarks-on-Clinical-Medicine-Examination/
+RESEARCH_PLAN.md
+Inquiry to Editor - Intelligent Medicine.md
+Cover letter.docx
+Conflict of Interest.docx
+Title Page.docx
+Legends.docx
+/Manuscript20251228.pdf
+/Manuscript20251228_FigMerged.docx
+/Manuscript20260111.docx
+/Manuscript20260111.pdf
+/Manuscript20260111.zip
+/Supplementary Materials.pdf
+discussion.md
+results.md
+/LLM_Medical_Exam_Study_Presentation.pptx
+/research_infographic.png
+/create_presentation.py
+
+# keep only the public figure-composition helpers
+tools/*
+!tools/compose_two_panel_figure.py
+!tools/make_profile_composite.py
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
